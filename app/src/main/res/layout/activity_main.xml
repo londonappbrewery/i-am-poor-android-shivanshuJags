@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,6 +8,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#076ec9"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
+    <TextView
+        android:id="@+id/I_am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/IAM"
+        android:textSize="50sp"
+        android:paddingTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/poor_id"
+        android:layout_toStartOf="@+id/poor_id"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:id="@+id/poor_id"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poor"
+        android:textSize="50sp"
+        android:paddingTop="25dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/coal_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/coal"
+        android:layout_below="@+id/I_am"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
 </RelativeLayout>
